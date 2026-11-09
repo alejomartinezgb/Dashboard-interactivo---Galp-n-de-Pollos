@@ -132,6 +132,9 @@ with st.sidebar:
                     step=100, key="k_precio", on_change=al_cambiar_manual)
     st.caption("Los rangos corresponden a lo observado en los 12 lotes vendidos. "
                "Fuera de ese rango el modelo no tiene experiencia.")
+    st.sidebar.markdown("---")
+    st.sidebar.caption("**Base conectada:** `data/galpon_avicola.db`")
+    st.sidebar.caption("12 lotes finalizados | 3 en proceso")
 
 # Valores actuales del simulador
 p = {campo: st.session_state[clave] for campo, clave in CLAVES.items()}
